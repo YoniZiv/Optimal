@@ -1,5 +1,6 @@
 import { Component, OnInit, Input, SimpleChanges, Output } from "@angular/core";
 import { EventEmitter } from "@angular/core";
+import { Result } from 'src/app/interfaces/Result';
 
 @Component({
   selector: "app-search-results",
@@ -7,13 +8,13 @@ import { EventEmitter } from "@angular/core";
   styleUrls: ["./search-results.component.scss"]
 })
 export class SearchResultsComponent implements OnInit {
-  @Input() results = [];
+  @Input() results : Result[] = [] ;
   @Output() onAnswerClicked = new EventEmitter();
   constructor() {}
 
   ngOnInit() {}
 
-  displayAnswer(ans) {
+  displayAnswer(ans: Result) {
     this.onAnswerClicked.emit(ans);
   }
 }

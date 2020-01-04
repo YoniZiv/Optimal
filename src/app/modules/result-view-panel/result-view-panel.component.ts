@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { Result } from 'src/app/interfaces/Result';
 
 @Component({
   selector: "app-result-view-panel",
@@ -6,7 +7,7 @@ import { Component, OnInit, Input } from "@angular/core";
   styleUrls: ["./result-view-panel.component.scss"]
 })
 export class ResultViewPanelComponent implements OnInit {
-  @Input() selectedAnswer = {};
+  @Input() selectedAnswer : Result = {} as Result;
 
   constructor() {}
 

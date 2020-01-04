@@ -1,5 +1,6 @@
 import { Component, OnInit, EventEmitter, Output } from "@angular/core";
 import { ApiService } from "../../services/api.service";
+import { Result } from 'src/app/interfaces/Result';
 
 @Component({
   selector: "app-search-panel",
@@ -26,7 +27,7 @@ export class SearchPanelComponent implements OnInit {
               view_count: x.view_count,
               title: x.title,
               image: x.owner.profile_image
-            }))
+            }as Result))
         );
       });
     }
