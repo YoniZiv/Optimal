@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 20px 30% auto 20px;
+  grid-template-rows: 20px 100px 80px auto 20px;
+}
+
+.header {
+  grid-area: 2/2/2/4;
+  background: #e91e63;
+  text-align: center;
+  color: white;
+}
+
+.search {
+  grid-area: 3/2/3/2;
+  background: #424242;
+  text-align: center;
+  justify-self: center;
+  align-self: center;
+}
+
+.search-background {
+  grid-area: 3/2/3/2;
+  background: #424242;
+  text-align: center;
+}
+
+.search-results {
+  grid-area: 4/2/4/2;
+  background: #424242;
+}
+
+.selected-result {
+  grid-area: 3/3/5/3;
+  background: #b0bec5;
+}
+
+.wrapper {
+  height: 100vh;
+}

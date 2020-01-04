@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="item" *ngFor="let i of results">
+    <button mat-stroked-button color="accent" (click)="displayAnswer(i)">
+      {{ i.title }}
+    </button>
+  </div>
+</div>

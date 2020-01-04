@@ -1,0 +1,22 @@
+<div *ngIf="selectedAnswer.title">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar>
+        <div
+          class="avatar"
+          [ngStyle]="{ background: 'url(' + selectedAnswer.image + ')' }"
+        ></div>
+      </div>
+      <mat-card-title
+        >View Count: {{ selectedAnswer.view_count }}</mat-card-title
+      >
+      <mat-card-subtitle>score: {{ selectedAnswer.score }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>link:</p>
+      <a [href]="selectedAnswer.link">
+        {{ selectedAnswer.link }}
+      </a>
+    </mat-card-content>
+  </mat-card>
+</div>

@@ -1,0 +1,14 @@
+<!-- <input matInput placeholder="Tag name" value="" /> -->
+
+<form class="example-form">
+  <mat-form-field>
+    <input
+      matInput
+      [(ngModel)]="searchValue"
+      name="searchInput"
+      placeholder="Tag name"
+      value=""
+    />
+  </mat-form-field>
+  <button mat-raised-button color="primary" (click)="send()">Go</button>
+</form>
